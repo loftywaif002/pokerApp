@@ -2,7 +2,7 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def howtoplay
+  def help
   end
   
   def about
