@@ -1,3 +1,14 @@
+<style>
+h1{
+  color:white;
+} 
+
+.btn{
+  background-color:#FF4000;
+}
+ 
+</style>
+
 <% provide(:title, 'Sign up') %>
 <h1>Sign up</h1>
 
@@ -6,16 +17,16 @@
     <%= form_for(@user) do |f| %>
       <%= render 'shared/error_messages' %>
 
-      <%= f.label :name %>
+      <%= f.label :name, :style => "color: red;" %>
       <%= f.text_field :name, class: 'form-control' %>
 
-      <%= f.label :email %>
+      <%= f.label :email,:style => "color: red;" %>
       <%= f.email_field :email, class: 'form-control' %>
 
-      <%= f.label :password %>
+      <%= f.label :password,:style => "color: red;" %>
       <%= f.password_field :password, class: 'form-control' %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
+      <%= f.label :password_confirmation, "Confirmation",:style => "color: red;" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
       <%= f.submit "Create my account", class: "btn btn-primary" %>

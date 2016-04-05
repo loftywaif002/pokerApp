@@ -3,7 +3,7 @@
 
 /* mixins, variables, etc. */
 
-$gray-medium-light: #eaeaea;
+$gray-medium-light: #ffffff;
 
 
 @mixin box_sizing {
@@ -40,6 +40,7 @@ textarea {
   text-align: center;
   h1 {
     margin-bottom: 10px;
+    color:white;
   }
 }
 
@@ -51,9 +52,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 3em;
-  letter-spacing: -2px;
+  //letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+  text-align: center
+  
 }
 
 h2 {
@@ -62,7 +64,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  //color: $gray-light;
 }
 
 p {
@@ -87,6 +89,8 @@ p {
     text-decoration: none;
   }
 }
+
+
 
 /* footer */
 
@@ -138,6 +142,7 @@ aside {
       letter-spacing: -1px;
       margin-bottom: 3px;
       margin-top: 0px;
+      color:white;
     }
   }
 }
@@ -177,4 +182,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
