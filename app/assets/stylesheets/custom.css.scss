@@ -197,3 +197,17 @@ input {
   width: auto;
   margin-left: 0;
 }
+
+//This changes the color of the signup button in the login Page
+.row  p strong a{
+     
+      $colors: purple;
+    
+      color: nth($colors, 1);
+}
+.row p {
+     
+      $colors: white;
+    
+      color: nth($colors, 1);
+}
